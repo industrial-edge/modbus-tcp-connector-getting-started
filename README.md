@@ -20,7 +20,7 @@ This example shows how to use the Industrial Edge App “Modbus TCP”
 
 ### Overview
 
-This document describes how to configure the Modbus TCP Configurator for establishing a connection to an Modbus Server. 
+In this example a connection between a Modbus server and clients is configured. The edge device acts as the client and the Modbus server can be any hardware that is able to instantiate standard Modbus communication. Please also check the documentation for the requirements.
 
 ![Overview](docs/graphics/Overview.png)
 
