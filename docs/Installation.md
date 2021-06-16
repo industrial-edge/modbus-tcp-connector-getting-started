@@ -24,9 +24,7 @@ Deploy the configuration.
 
 Open the app Modbus TCP Configurator.
 
-On the left corner you can add the Data Source.
-
-![add_data_source] (graphics/add_data_source.png)
+![add_data_source](graphics/add_data_source.png)On the left corner you can add the Data Source. 
 
 
 
