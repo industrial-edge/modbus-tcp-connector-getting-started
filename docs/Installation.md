@@ -22,25 +22,26 @@ Deploy the configuration.
 
 ## Configure Modbus TCP Configurator
 
-Open the app Modbus TCP Configurator.
+Open the app Modbus TCP Configurator.On the left corner you can add the Data Source. 
 
-![add_data_source](graphics/add_data_source.png)On the left corner you can add the Data Source. 
+![add_data_source](graphics/add_data_source.png)
 
+Add multiple Tags
 
+![add_tag](graphics/add_tag.png) 
 
-![add_tag] Add multiple Tags(graphics/add_tag.png) 
+Adjust user credentials 
 
+![add_credentials](graphics/add_credentials.png)
 
+Deploy and start the project
 
-![add_credentials]Adjust user credentials (graphics/add_credentials.png)
+![workflow_project](graphics/workflow_project.png)
 
+Open IE-Flow Creator 
 
+![flow_creator](graphics/flow_creator.png)
 
-![workflow_project] Deploy and start the project(graphics/workflow_project.png)
+Observe the incoming data via IE-Flow Creator "MQTT-In Node"
 
-
-
-![flow_creator] (graphics/flow_creator.png)
-
-
-![IE_Flow_Creator](graphics/IE_Flow_Creator.png) Observe the incoming data via IE-Flow Creator "MQTT-In Node"
+![IE_Flow_Creator](graphics/IE_Flow_Creator.png) 
