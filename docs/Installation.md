@@ -40,8 +40,8 @@ Deploy and start the project
 
 Open IE-Flow Creator 
 
-![flow_creator](graphics/flow_creator.png)
+![IE_Flow_Creator](graphics/IE_Flow_Creator.png)
 
 Observe the incoming data via IE-Flow Creator "MQTT-In Node"
 
-![IE_Flow_Creator](graphics/IE_Flow_Creator.png) 
+![flow_creator](graphics/flow_creator.png) 
