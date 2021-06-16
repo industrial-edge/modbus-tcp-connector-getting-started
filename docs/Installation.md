@@ -34,6 +34,6 @@ Click on the right corner Settings and add your Databus credentials(graphics/add
 
 Afterwards you can deploy and start the project(graphics/workflow_project.PNG)
 
-![IE_Flow_Creator](graphics/IE_Flow_Creator.PNG)
+![IE_Flow_Creator](graphics/IE_Flow_Creator.png)
 
 Select the "MQTT-In Node" and check if you're able to browse the metadata(graphics/flow_creator.PNG)
