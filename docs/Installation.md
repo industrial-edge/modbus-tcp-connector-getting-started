@@ -1,39 +1,39 @@
 # Configuration
 
 - [Configuration](#configuration)
-    - [Configure Databus](#configure-databus)
+  - [Configure Databus](#configure-databus)
   - [Configure Modbus TCP Configurator](#modbus-tcp-configurator)
-    - [Configure IE-Flow Creator](#ie-flow-creator)
+  - [Configure IE-Flow Creator](#ie-flow-creator)
    
 
 
-### Configure Databus
+## Configure Databus
 
-In your IEM open the Databus and launch the configurator.
+ Open the Databus and launch the configurator.
 
-Add a user with this topic:
+Add a user with the following topic:
 `"ie/#"`
 
 ![ie_databus_user](graphics/IE_Databus_User.PNG)
 
-![ie_databus](graphics/IE_Databus.PNG)
-
 Deploy the configuration.
+
+![ie_databus](graphics/IE_Databus.PNG)
 
 ## Configure Modbus TCP Configurator
 
-In your IED Web UI open the app Modbus TCP Configurator.
+Open the app Modbus TCP Configurator.
 
-Click "Add Data Source" at the top of the left side.
+On the left corner you can add your Data Source.
 
-![Modbus_TCP_Configurator]](graphics/add_data_source.PNG)
+![Modbus_TCP_Configurator]](graphics/add_data_source.png)
 
-Add your Tags(graphics/add_tag.PNG) 
+Add multiple Tags(graphics/add_tag.png) 
 
-Click on the right corner Settings and add your Databus credentials(graphics/add_credentials.PNG)
+Adjust user credentials (graphics/add_credentials.png)
 
-Afterwards you can deploy and start the project(graphics/workflow_project.PNG)
+Deploy and start the project(graphics/workflow_project.png)
 
-![IE_Flow_Creator](graphics/IE_Flow_Creator.png)
+![IE_Flow_Creator](graphics/flow_creator.png)
 
-Select the "MQTT-In Node" and check if you're able to browse the metadata(graphics/flow_creator.PNG)
+Observe the incoming data via IE-Flow Creator "MQTT-In Node"(graphics/IE_Flow_Creator.png)
