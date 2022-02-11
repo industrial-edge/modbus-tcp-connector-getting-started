@@ -46,7 +46,7 @@ For the ModBus Server any modbus TCP capable Device can be used (see Modbus TCP 
 ### Used components
 
 - Industrial Edge Management (IEM) V1.2.0-34
-- IE Databus Configurator V1.2.23
+- IE Databus Configurator V1.2.29
 - IE Databus V1.2.16
 - Modbus TCP Connector V1.1.2
 - Modbus TCP Configurator V1.1.2
