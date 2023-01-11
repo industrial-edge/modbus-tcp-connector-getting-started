@@ -1,39 +1,58 @@
-# Modbus TCP Connector application example
+# Modbus TCP Connector
 
-This example shows how to use the Industrial Edge App “Modbus TCP” 
+This example shows how to use the Industrial Edge app Modbus TCP Connector.
 
-- [Modbus TCP application example](#modbus-tcp-example)
+- [Modbus TCP Connector](#modbus-tcp-connector)
   - [Description](#description)
     - [Overview](#overview)
     - [General task](#general-task)
   - [Requirements](#requirements)
-    - [Prerequisities](#prerequisities)
+    - [Prerequisites](#prerequisites)
     - [Used components](#used-components)
-  - [Configuration steps](#configuration-steps)
+    - [PLC project](#plc-project)
+  - [Installation](#installation)
   - [Usage](#usage)
   - [Documentation](#documentation)
   - [Contribution](#contribution)
   - [Licence and Legal Information](#licence-and-legal-information)
 
-
 ## Description
 
 ### Overview
 
-In this example a connection between a Modbus server and clients is configured. The edge device acts as the client and the Modbus server can be any hardware that is able to instantiate standard Modbus communication. Please also check the documentation for the requirements.
+This tutorial shows how to use the Industrial Edge application Modbus TCP Connector to establish a connection between an Industrial Edge Device (IED) and a 3rd party PLC that supports Modbus TCP, a data communications protocol (client/server) that runs on Ethernet.
 
-![Overview](docs/graphics/Overview.png)
+These PLC variants are supported:
+
+- Schneider Quantum TCP/IP 140 CPU 113 03　
+- Schneider TSX Premium TSXP573634　
+- Schneider TSX Momentum 171CCC98020 (TCP/IP)　
+- Schneider Micro TSX 3710001　
+- Schneider M 340
+- Schneider TM218LDAE24DRHN
+- Schneider TM238LDD24DT
+- Schneider TM258LD42DT　
+- Siemens SIWAREX WP231　
+- Siemens SIWAREX WP241
+
+The Modbus TCP Connector is an application that runs on the individual IED. Connections can be configured using the Common Configurator for Industrial Edge. The connector transfers the value series of selected data points from a PLC to the Databus. From there the data can be used within other Edge apps, e.g. the Flow Creator.
 
 ### General task
+
+**TODO: Go ahead here...**
+
+In this example a connection between a Modbus server and clients is configured. The edge device acts as the client and the Modbus server can be any hardware that is able to instantiate standard Modbus communication. Please also check the documentation for the requirements.
+
 
 Getting started Edge App Modbus TCP. 
 In this example the Edge Device acts as Modbus client. 
 For the ModBus Server any modbus TCP capable Device can be used (see Modbus TCP documentation system tested). 
 
+![Overview](docs/graphics/Overview.png)
+
 ## Requirements
 
-
-###  Prerequisities
+###  Prerequisites
 
 - Access to an Industrial Edge Management System (IEM)
 - Onboarded Industial Edge Device on IEM
@@ -54,8 +73,9 @@ For the ModBus Server any modbus TCP capable Device can be used (see Modbus TCP 
 - Industrial Edge Device V 1.2.0-56
 - Web browser (Mozilla or Chrome)
 
+### PLC project
 
-## Configuration steps
+## Installation
 
 You can find the further information about the following steps in the [docs](docs/Installation.md)
 - Download Modbus TCP Configurator & Connector on your Edge Device
