@@ -68,9 +68,6 @@ To configure the Modbus TCP Connector, proceed as following:
 
 - go to the tab 'Get data' and select tab 'Databus connectors'
 - select the Modbus TCP Connector
-
-![ConnectorOverview](/docs/graphics/IIH_Connector_Overview.png)
-
 - switch to tab 'Tags'
 - choose 'Add data source'
 - configure the PLC accordingly and save
