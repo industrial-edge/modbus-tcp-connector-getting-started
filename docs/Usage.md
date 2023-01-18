@@ -17,7 +17,7 @@ To print out the Modbus TCP Connector metadata, follow these steps:
 - create a mqtt in node
 - set the server to 'ie-databus' with port 1883 and corresponding user name/password ('edge'/'edge')
 - set the topic to `ie/m/j/simatic/v1/mbtcp1/dp`
-- create a debug node and connecto to the mqtt in node
+- create a debug node and connect to the mqtt in node
 - deploy the flow and watch the debug window
 
 ![metadata_flow](/docs/graphics/Metadata_Flow.png)
