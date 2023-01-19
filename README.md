@@ -19,7 +19,7 @@ This example shows how to use the Industrial Edge app Modbus TCP Connector.
 
 ### Overview
 
-This tutorial shows how to use the Industrial Edge application Modbus TCP Connector to establish a connection between an Industrial Edge Device (IED) and a 3rd party PLC that supports Modbus TCP, a data communications protocol (client/server) that runs on Ethernet.
+This tutorial shows how to use the Industrial Edge application Modbus TCP Connector to establish a connection between an Industrial Edge Device (IED) and a PLC that supports Modbus TCP, a data communications protocol (client/server) that runs on Ethernet.
 
 These PLC variants are supported:
 
