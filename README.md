@@ -38,7 +38,7 @@ The Modbus TCP Connector is an application that runs on the individual IED. Conn
 
 ### General task
 
-Here we configure a connection between a Modbus server and client. The IED acts as the Modbus client (master) and the Modbus server (slave) can be any hardware that is able to instantiate standard Modbus communication. The data is published on the IE Databus. By using the application IE Flow Creator, we fetch the metadata of the Modbus TCP Connector, write some data on the configured tags and read out data.
+Here we configure a connection between a Modbus server and client. The IED acts as the Modbus client and the Modbus server can be any hardware that is able to instantiate standard Modbus communication. The data is published on the IE Databus. By using the application IE Flow Creator, we fetch the metadata of the Modbus TCP Connector, write some data on the configured tags and read out data.
 
 ![Overview](docs/graphics/Overview.png)
 
