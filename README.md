@@ -48,7 +48,7 @@ Here we configure a connection between a Modbus server and client. The IED acts 
 
 - Access to an Industrial Edge Management (IEM) with onboarded Industrial Edge Device (IED)
 - IEM: Installed system configurator for Databus
-- IED: Installed apps IE Databus, IE Flow Creator, IIH Configurator, IIH Registry Service, Modbus TCP Connector, Data Service (optional)
+- IED: Installed apps IE Databus, IE Flow Creator, Common Configurator, IIH Registry Service, Modbus TCP Connector, IIH Essentials, Databus gateway
 - IED is connected to Modbus TCP Server
 - Google Chrome (Version ≥ 72)
 
