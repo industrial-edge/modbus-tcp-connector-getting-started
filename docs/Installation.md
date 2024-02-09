@@ -92,7 +92,7 @@ Please look up the operating manual of the app for detailed information.
 
 - select the newly created PLC and click 'Deploy' to save the configuration and start the project
 
-![Deploy](/docs/graphics/IIH_Deploy.png)
+![Deploy](/docs/graphics/deploy.png)
 
 - back on the overview page 'Databus connectors', the status of the Modbus TCP Connector should be shown as **connected**
 
