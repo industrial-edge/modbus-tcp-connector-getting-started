@@ -67,8 +67,7 @@ If some data is written on tag ***var_dint*** with ID 103, the output looks like
 
 ![read_2](/docs/graphics/Read_2.png)
 
-## Use Data Service
-
+## Use IIH Essentials
 The app Data Service collects the data out of different connectors and stores it for a defined time period. This is a prerequisite for other apps like Performance Insight.
 
 To activate the data transfer from the Modbus TCP Connector, proceed as following:
