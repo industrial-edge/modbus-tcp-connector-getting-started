@@ -82,8 +82,10 @@ To configure the Modbus TCP Connector, proceed as following:
 05H, 06H, 15H, and 16H are used for writing into the PLC. Otherwise only function codes 15H and 16H are used.
 
 Please look up the operating manual of the app for detailed information.
-
+![configuration1](/docs/graphics/modbus set.png)
 ![IIH_Settings](/docs/graphics/modbus set.png)
+![modbus set](https://github.com/industrial-edge/modbus-tcp-connector-getting-started/assets/158267726/a9ab78f4-a204-4fdc-a566-657ecfb8dde8)
+
 - under column 'Actions' of the newly created PLC, choose 'Add tag'
 - configure the tags accordingly and save
 
