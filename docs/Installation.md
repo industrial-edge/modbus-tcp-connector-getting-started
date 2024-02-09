@@ -82,9 +82,8 @@ To configure the Modbus TCP Connector, proceed as following:
 05H, 06H, 15H, and 16H are used for writing into the PLC. Otherwise only function codes 15H and 16H are used.
 
 Please look up the operating manual of the app for detailed information.
-![configuration1](/docs/graphics/modbus set.png)
-![IIH_Settings](/docs/graphics/modbus set.png)
-![modbus set](https://github.com/industrial-edge/modbus-tcp-connector-getting-started/assets/158267726/a9ab78f4-a204-4fdc-a566-657ecfb8dde8)
+
+![configuration1](/docs/graphics/connectors.png)
 
 - under column 'Actions' of the newly created PLC, choose 'Add tag'
 - configure the tags accordingly and save
@@ -92,9 +91,11 @@ Please look up the operating manual of the app for detailed information.
 ![configuration2](/docs/graphics/Configuration2.png)
 
 - select the newly created PLC and click 'Deploy' to save the configuration and start the project
-https://github.com/industrial-edge/modbus-tcp-connector-getting-started/blob/Modbus/2/docs/graphics/deploy.png
+
+![Deploy](/docs/graphics/IIH_Deploy.png)
 
 - back on the overview page 'Databus connectors', the status of the Modbus TCP Connector should be shown as **connected**
-https://github.com/industrial-edge/modbus-tcp-connector-getting-started/blob/Modbus/2/docs/graphics/connectors.pngus-tcp-connector-getting-started/assets/158267726/018608f2-51ab-4ee0-a8f4-029bb000706f)
+
+![Connected](/docs/graphics/IIH_Connected.png)
 
 Now data can be transferred via the Modbus TCP connection. Please find more information in the [Usage](/docs/Usage.md) documentation.
