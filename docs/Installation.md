@@ -92,9 +92,9 @@ Please look up the operating manual of the app for detailed information.
 ![configuration2](/docs/graphics/Configuration2.png)
 
 - select the newly created PLC and click 'Deploy' to save the configuration and start the project
-![deploy](https://github.com/industrial-edge/modbus-tcp-connector-getting-started/assets/158267726/819c6c7a-69d7-4408-828d-03bca8b5e6b6)
+https://github.com/industrial-edge/modbus-tcp-connector-getting-started/blob/Modbus/2/docs/graphics/deploy.png
 
 - back on the overview page 'Databus connectors', the status of the Modbus TCP Connector should be shown as **connected**
-![Avaible connectors](https://github.com/industrial-edge/modbus-tcp-connector-getting-started/assets/158267726/018608f2-51ab-4ee0-a8f4-029bb000706f)
+https://github.com/industrial-edge/modbus-tcp-connector-getting-started/blob/Modbus/2/docs/graphics/connectors.pngus-tcp-connector-getting-started/assets/158267726/018608f2-51ab-4ee0-a8f4-029bb000706f)
 
 Now data can be transferred via the Modbus TCP connection. Please find more information in the [Usage](/docs/Usage.md) documentation.
