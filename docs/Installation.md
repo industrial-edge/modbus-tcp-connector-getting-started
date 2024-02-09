@@ -12,7 +12,7 @@ When working with connectors on Industrial Edge, the **IE Databus** app is requi
 
 Make sure the following apps are installed and running on the Industrial Edge Device (IED):
 - IE Databus
-- IIH Configurator
+- Common Configurator
 - IIH Registry Service
 
 ## Install Modbus TCP Connector
