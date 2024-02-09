@@ -46,7 +46,7 @@ Therefore follow these steps:
 - create the topic `ie/#` and a dedicated user with username and password ('edge'/'edge'), set permissions to 'Publish and Subscribe'
 - deploy the configuration and wait for the job to be finished successfully
 
-![databus](/docs/graphics/Databus.png)
+![databus](/docs/graphics/databus.png)
 
 ## Configure Modbus TCP via Common Configurator
 
@@ -60,7 +60,7 @@ With the Common Configurator, you can configure several connectors and publish t
 - in tab 'Data Subscriber settings' enter the databus user name and password ('edge'/'edge')
 - Save the settings
 
-![IIH_Settings](/docs/graphics/IIH_Settings.png)
+![IIH_Settings](/docs/graphics/databuscred.PNG)
 
 As soon as the Modbus TCP Connector is installed and started on the same IED as the Common Configurator, the connector is visible within the configurator. In this example we want to configure a Modbus TCP connection to any Modbus TCP server.
 
