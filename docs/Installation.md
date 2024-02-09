@@ -96,6 +96,6 @@ Please look up the operating manual of the app for detailed information.
 
 - back on the overview page 'Databus connectors', the status of the Modbus TCP Connector should be shown as **connected**
 
-![Connected](/docs/graphics/IIH_Connected.png)
+![configuration1](/docs/graphics/connectors.png)
 
 Now data can be transferred via the Modbus TCP connection. Please find more information in the [Usage](/docs/Usage.md) documentation.
