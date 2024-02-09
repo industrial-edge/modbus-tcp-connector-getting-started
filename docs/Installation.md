@@ -64,13 +64,7 @@ With the Common Configurator, you can configure several connectors and publish t
 
 As soon as the Modbus TCP Connector is installed and started on the same IED as the Common Configurator, the connector is visible within the configurator. In this example we want to configure a Modbus TCP connection to any Modbus TCP server.
 
-To configure the Modbus TCP Connector, proceed as following:
 
-- go to the tab 'Get data' and select tab 'Databus connectors'
-- select the Modbus TCP Connector
-- switch to tab 'Tags'
-- choose 'Add data source'
-- configure the PLC accordingly and save
 
 **Zero based addressing**: is enabled by default; the configured address should start with an index of zero so that both PLC register addresses and configurator indexes will start from zero.
 
@@ -85,6 +79,15 @@ Please look up the operating manual of the app for detailed information.
 
 ![configuration1](/docs/graphics/connectors.png)
 
+To configure the Modbus TCP Connector, proceed as following:
+
+- go to the tab 'Get data' and select tab 'Databus connectors'
+- select the Modbus TCP Connector
+- switch to tab 'Tags'
+- choose 'Add data source'
+- configure the PLC accordingly and save
+- ![configuration2](/docs/graphics/modbusset.png)
+- 
 - under column 'Actions' of the newly created PLC, choose 'Add tag'
   
 - ![configuration2](/docs/graphics/tagimport.png)
