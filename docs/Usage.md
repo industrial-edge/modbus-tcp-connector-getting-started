@@ -89,7 +89,6 @@ To activate the data transfer from the Modbus TCP Connector, proceed as followin
 - choose Modbus TCP Connector
 - select Deploy
 ![DataServiceAdapter](/docs/graphics/Definedata.png)
-
 - open Store Data in Common Configurator
 - create new Asset
 - read data
