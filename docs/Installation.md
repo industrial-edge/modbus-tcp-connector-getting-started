@@ -86,6 +86,9 @@ Please look up the operating manual of the app for detailed information.
 ![configuration1](/docs/graphics/connectors.png)
 
 - under column 'Actions' of the newly created PLC, choose 'Add tag'
+  
+- ![configuration2](/docs/graphics/tagimport.png)
+  
 - configure the tags accordingly and save
 
 ![configuration2](/docs/graphics/Configuration2.png)
