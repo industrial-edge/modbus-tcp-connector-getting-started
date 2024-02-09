@@ -48,9 +48,9 @@ Therefore follow these steps:
 
 ![databus](/docs/graphics/Databus.png)
 
-## Configure Modbus TCP via IIH Configurator
+## Configure Modbus TCP via Common Configurator
 
-With the IIH Configurator, you can configure several connectors and publish the data to the IE Databus. Therefore, you must enter the Databus credentials within the IIH Configurator:
+With the Common Configurator, you can configure several connectors and publish the data to the IE Databus. Therefore, you must enter the Databus credentials within the Common Configurator:
 
 - open the IED web interface
 - open the app IIH Configurator
@@ -62,7 +62,7 @@ With the IIH Configurator, you can configure several connectors and publish the 
 
 ![IIH_Settings](/docs/graphics/IIH_Settings.png)
 
-As soon as the Modbus TCP Connector is installed and started on the same IED as the IIH Configurator, the connector is visible within the configurator. In this example we want to configure a Modbus TCP connection to any Modbus TCP server.
+As soon as the Modbus TCP Connector is installed and started on the same IED as the Common Configurator, the connector is visible within the configurator. In this example we want to configure a Modbus TCP connection to any Modbus TCP server.
 
 To configure the Modbus TCP Connector, proceed as following:
 
@@ -82,8 +82,7 @@ To configure the Modbus TCP Connector, proceed as following:
 05H, 06H, 15H, and 16H are used for writing into the PLC. Otherwise only function codes 15H and 16H are used.
 
 Please look up the operating manual of the app for detailed information.
-
-![configuration1](/docs/graphics/Configuration1.png)
+![MTCP - config](https://github.com/industrial-edge/modbus-tcp-connector-getting-started/assets/158267726/5d3364dc-b317-4db8-b276-64bb7b3669b2)
 
 - under column 'Actions' of the newly created PLC, choose 'Add tag'
 - configure the tags accordingly and save
