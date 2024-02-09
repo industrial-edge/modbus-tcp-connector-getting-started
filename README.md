@@ -84,7 +84,7 @@ You can find further information about how to handle the data via the IE Flow Cr
 * [Read metadata](/docs/Usage.md#read-metadata)
 * [Write data](/docs/Usage.md#write-data)
 * [Read data](/docs/Usage.md#read-data)
-* [Use IIH Essentials](/docs/Usage.md#use-data-service)
+* [Use IIH Essentials](/docs/Usage.md#use-IIH-Essentials)
 * [Use Common Configurator](/docs/Usage.md#Use-Store-Data-in-Common-Configurator)
 ## Documentation
 
