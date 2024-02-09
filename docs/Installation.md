@@ -76,6 +76,7 @@ As soon as the Modbus TCP Connector is installed and started on the same IED as 
 05H, 06H, 15H, and 16H are used for writing into the PLC. Otherwise only function codes 15H and 16H are used.
 
 Please look up the operating manual of the app for detailed information.
+In Commoc configurator choose Get Data - Connector configurator 
 
 ![configuration1](/docs/graphics/connectors.png)
 
@@ -86,9 +87,9 @@ To configure the Modbus TCP Connector, proceed as following:
 - switch to tab 'Tags'
 - choose 'Add data source'
 - configure the PLC accordingly and save
-- ![configuration2](/docs/graphics/modbusset.png)
-- 
-- under column 'Actions' of the newly created PLC, choose 'Add tag'
+ ![configuration2](/docs/graphics/modbusset.png)
+ 
+  under column 'Actions' of the newly created PLC, choose 'Add tag'
   
 - ![configuration2](/docs/graphics/tagimport.png)
   
