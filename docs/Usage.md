@@ -59,16 +59,16 @@ To print out the transfered Modbus TCP Connector data, you must fetch the tag ID
 
 ![read_data_flow](/docs/graphics/Read_Data_Flow.png)
 
-If some data is written on tag ***var_int*** with ID 102, the output looks like the following:
+If some data is written on tag with ID 102, the output looks like the following:
 
 ![read_1](/docs/graphics/Read_1.png)
 
-If some data is written on tag ***var_dint*** with ID 103, the output looks like the following:
+If some data is written on tag with ID 103, the output looks like the following:
 
 ![read_2](/docs/graphics/Read_2.png)
 
 ## Use IIH Essentials
-The app Data Service collects the data out of different connectors and stores it for a defined time period. This is a prerequisite for other apps like Performance Insight.
+The app IIH Essentials collects the data out of different connectors and stores it for a defined time period. This is a prerequisite for other apps like Performance Insight.
 
 To activate the data transfer from the Modbus TCP Connector, proceed as following:
 
@@ -83,13 +83,10 @@ To activate the data transfer from the Modbus TCP Connector, proceed as followin
 - go to tab 'Assets & Connectivity' and add the variables, that were configured within the Modbus TCP Connector
 
 - ## Use Store Data in Common Configurator
-
+- (It´s necessary to have IIH Essentials installed)
 - open Define Data in Common Configurator
 - choose Modbus TCP Connector
-- select Deploy
-![DataServiceAdapter](/docs/graphics/Definedata.png)
-- open Store Data in Common Configurator
-- create new Asset
-- read data
+- Add asset, add tags to the asset and deploy
+
 ![DataServiceAdapter](/docs/graphics/Storedata.png)
 
