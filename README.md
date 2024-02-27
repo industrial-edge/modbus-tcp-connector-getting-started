@@ -55,16 +55,16 @@ Here we configure a connection between a Modbus server and client. The IED acts 
 ### Used components
 
 - Industrial Edge Management (IEM) V1.5.1-4 / V2.0.1-1
-  - IE Databus Configurator V2.3.1-4
-- Industrial Edge Virtual Device (OS) ievd-1.14.1-1-b
-  - IE Databus V2.1.0-2
-  - IE Flow Creator V1.16.0-2
-  - IIH Configurator V1.9.0-4
+  - Databus Configurator V2.3.2-2
+  - Industrial Edge Virtual Device (OS) ievd-1.16.1-1-a
+  - Databus V2.3.2-5
+  - Flow Creator V1.16.0-2
+  - Common Configurator V1.14.0
   - IIH Registry Service V1.9.0.0
   - Modbus TCP Connector V3.0.1
   - IIH Essentials V1.9.0
   - Databus Gateway V1.9.0.0
-- Modbus TCP Server
+- Modbus TCP Server - "ModRSsim2 Modbus TCP Server Simulator)
 
 ## Configuration
 
