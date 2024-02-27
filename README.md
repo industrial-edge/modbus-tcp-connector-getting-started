@@ -72,7 +72,7 @@ You can find further information about the following steps in the [Configuration
 
 - [Overview](/docs/Installation.md#overview)
 - [Install Modbus TCP Connector](/docs/Installation.md#install-modbus-tcp-connector)
-- [Configure IE Databus](/docs/Installation.md#configure-ie-databus)
+- [Configure Databus](/docs/Installation.md#configure-ie-databus)
 - [Configure Modbus TCP via Common Configurator](/docs/Installation.md#configure-modbus-tcp-via-common-configurator)
 
 ## Usage
