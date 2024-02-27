@@ -59,13 +59,10 @@ To print out the transfered Modbus TCP Connector data, you must fetch the tag ID
 
 ![read_data_flow](/docs/graphics/Read_Data_Flow.png)
 
-If some data is written on tag with ID 102, the output looks like the following:
+If some data is written in flow creator it looks like the following:
 
 ![read_1](/docs/graphics/Read_1.png)
 
-If some data is written on tag with ID 103, the output looks like the following:
-
-![read_2](/docs/graphics/Read_2.png)
 
 ## Use IIH Essentials
 The app IIH Essentials collects the data out of different connectors and stores it for a defined time period. This is a prerequisite for other apps like Performance Insight.
