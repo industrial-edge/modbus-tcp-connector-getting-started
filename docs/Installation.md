@@ -66,30 +66,27 @@ As soon as the Modbus TCP Connector is installed and started on the same IED as 
 
 
 
-**Zero based addressing**: is enabled by default; the configured address should start with an index of zero so that both PLC register addresses and configurator indexes will start from zero.
+"Zero based addressing" is disabled by default in V3
+"Change word order" is not an option anymore with V3
+"Use single write" is disabled by default in V3
 
-**Change word order**: is disabled by default; this modifies the word order for the representation of 32-bit values. The setting has only an effect on the data types Double and Float in the address operand of 4x.
-
-**Change bit order**: is disabled by default; here the standart bit counting method 16 LSB - 1 MSB is used. Otherwise the bit counting method 0 LSB - 15 MSB is used.
-
-**Use single write**: is enabled by default; the function codes
 05H, 06H, 15H, and 16H are used for writing into the PLC. Otherwise only function codes 15H and 16H are used.
 
 Please look up the operating manual of the app for detailed information.
-In Commoc configurator choose Get Data - Connector configurator 
+In Common configurator choose Get Data - Connector configurator 
 
 ![configuration1](/docs/graphics/connectors.png)
 
 To configure the Modbus TCP Connector, proceed as following:
 
-- go to the tab 'Get data' and select tab 'Databus connectors'
+- go to the tab 'Get data'
 - select the Modbus TCP Connector
 - switch to tab 'Tags'
 - choose 'Add data source'
 - configure the PLC accordingly and save
  ![configuration2](/docs/graphics/modbusset.png)
  
-  under column 'Actions' of the newly created PLC, choose 'Add tag'
+- under column 'Actions' of the newly created PLC, choose 'Add tag'
   
 - ![configuration2](/docs/graphics/tagimport.png)
   
