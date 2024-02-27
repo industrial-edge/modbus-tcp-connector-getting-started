@@ -24,10 +24,6 @@ To print out the Modbus TCP Connector metadata, follow these steps:
 
 ![metadata](/docs/graphics/Metadata.png)
 
-Now you can see the configured datapoints according to Modbus TCP Configurator settings:
-
-- ***var_int*** with unique id 102
-- ***var_dint*** with unique id 103
 
 ## Write data
 
