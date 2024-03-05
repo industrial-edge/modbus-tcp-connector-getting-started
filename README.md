@@ -63,7 +63,7 @@ Here we configure a connection between a Modbus server and client. The IED acts 
   - IIH Registry Service V1.9.0.0
   - Modbus TCP Connector V3.0.1
   - IIH Essentials V1.9.0
-  - Databus Gateway V1.9.0.0
+  - Databus Gateway V1.9.0
 - Modbus TCP Server - ModRSsim2 Modbus TCP Server Simulator
 
 ## Configuration
