@@ -53,7 +53,7 @@ Therefore follow these steps:
 With the Common Configurator, you can configure several connectors and publish the data to the IE Databus. Therefore, you must enter the Databus credentials within the Common Configurator:
 
 - open the IED web interface
-- open the app IIH Configurator
+- open the app Common configurator
 - go to the tab 'Settings' and select the menu 'Databus credentials'
 - enter the databus service name: 'ie-databus:1883'
 - in tab 'Data Publisher settings' enter the databus user name and password ('edge'/'edge')
