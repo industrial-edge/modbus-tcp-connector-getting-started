@@ -34,7 +34,7 @@ These PLC variants are supported:
 - Siemens SIWAREX WP231　
 - Siemens SIWAREX WP241
 
-The Modbus TCP Connector is an application that runs on the individual IED. Connections can be configured using the IIH Configurator for Industrial Edge. The connector transfers the value series of selected data points from a PLC to the Databus. From there the data can be used within other Edge apps, e.g. the Flow Creator.
+The Modbus TCP Connector is an application that runs on the individual IED. Connections can be configured using the Common Configurato for Industrial Edge. The connector transfers the value series of selected data points from a PLC to the Databus. From there the data can be used within other Edge apps, e.g. the Flow Creator.
 
 ### General task
 
@@ -85,7 +85,7 @@ You can find further information about how to handle the data via the IE Flow Cr
 * [Write data](/docs/Usage.md#write-data)
 * [Read data](/docs/Usage.md#read-data)
 * [Use IIH Essentials](/docs/Usage.md#use-IIH-Essentials)
-* [Use Common Configurator](/docs/Usage.md#Use-Store-Data-in-Common-Configurator)
+* [Use Common Configurato](/docs/Usage.md#Use-Store-Data-in-Common-Configurator)
 ## Documentation
 
 You can find further documentation and help in the following links
