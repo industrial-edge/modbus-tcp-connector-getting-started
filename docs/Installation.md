@@ -4,7 +4,7 @@
   - [Overview](#overview)
   - [Install Modbus TCP Connector](#install-modbus-tcp-connector)
   - [Configure IE Databus](#configure-ie-databus)
-  - [Configure Modbus TCP via IIH Configurator](#configure-modbus-tcp-via-iih-configurator)
+  - [Configure Modbus TCP via Common configurator](#configure-modbus-tcp-via-iih-configurator)
 
 ## Overview
 
