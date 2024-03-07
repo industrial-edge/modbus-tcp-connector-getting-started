@@ -73,6 +73,7 @@ As soon as the Modbus TCP Connector is installed and started on the same IED as 
 05H, 06H, 15H, and 16H are used for writing into the PLC. Otherwise only function codes 15H and 16H are used.
 
 Please look up the operating manual of the app for detailed information.
+
 In Common configurator choose Get Data - Connector configurator 
 
 ![configuration1](/docs/graphics/connectors.png)
