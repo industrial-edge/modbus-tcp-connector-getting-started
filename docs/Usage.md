@@ -4,7 +4,7 @@
   - [Read metadata](#read-metadata)
   - [Write data](#write-data)
   - [Read data](#read-data)
-  - [Use Data Service](#use-data-service)
+  - [Use IIH Essentials](#use-IIH-Essentials)
   
 Via the IE Flow Creator, we can write and read the Modbus TCP data.
 
@@ -66,7 +66,7 @@ The app IIH Essentials collects the data out of different connectors and stores 
 To activate the data transfer from the Modbus TCP Connector, proceed as following:
 
 - open the IED web interface
-- open the app Data Service
+- open the app IIH Essentials
 - go to tab 'Connectors' and select 'Modbus TCP Connector'
 - select the edit button and enter the user name and the password for the Databus user ('edge'/'edge')
 - activate the adapter and save
