@@ -85,7 +85,7 @@ You can find further information about how to handle the data via the IE Flow Cr
 * [Write data](/docs/Usage.md#write-data)
 * [Read data](/docs/Usage.md#read-data)
 * [Use IIH Essentials](/docs/Usage.md#use-IIH-Essentials)
-* [Use Common Configurato](/docs/Usage.md#Use-Store-Data-in-Common-Configurator)
+* [Use Common Configurator](/docs/Usage.md#Use-Store-Data-in-Common-Configurator)
 ## Documentation
 
 You can find further documentation and help in the following links
