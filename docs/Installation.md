@@ -89,7 +89,7 @@ To configure the Modbus TCP Connector, proceed as following:
  
 - under column 'Actions' of the newly created PLC, choose 'Add tag'
   
-- ![configuration2](/docs/graphics/tagimport.png)
+![configuration2](/docs/graphics/tagimport.png)
   
 - configure the tags accordingly and save
 
