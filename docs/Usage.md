@@ -80,5 +80,5 @@ To activate the data transfer from the Modbus TCP Connector, proceed as followin
 - choose Modbus TCP Connector
 - Add asset, add tags to the asset and deploy
 
-![DataServiceAdapter](/docs/graphics/Storedata.png)
+![DataServiceAdapter](/docs/graphics/asset.png)
 
