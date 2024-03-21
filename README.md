@@ -21,20 +21,7 @@ This example shows how to use the Industrial Edge app Modbus TCP Connector.
 
 This tutorial shows how to use the Industrial Edge application Modbus TCP Connector to establish a connection between an Industrial Edge Device (IED) and a PLC that supports Modbus TCP, a data communications protocol (client/server) that runs on Ethernet.
 
-These PLC variants are supported:
-
-- Schneider Quantum TCP/IP 140 CPU 113 03　
-- Schneider TSX Premium TSXP573634　
-- Schneider TSX Momentum 171CCC98020 (TCP/IP)　
-- Schneider Micro TSX 3710001　
-- Schneider M 340
-- Schneider TM218LDAE24DRHN
-- Schneider TM238LDD24DT
-- Schneider TM258LD42DT　
-- Siemens SIWAREX WP231　
-- Siemens SIWAREX WP241
-
-The Modbus TCP Connector is an application that runs on the individual IED. Connections can be configured using the Common Configurato for Industrial Edge. The connector transfers the value series of selected data points from a PLC to the Databus. From there the data can be used within other Edge apps, e.g. the Flow Creator.
+The Modbus TCP Connector is an application that runs on the individual IED. It can communicate with any Modbus TCP PLC that uses the standard protocol. Connections can be configured using the Common Configurato for Industrial Edge. The connector transfers the value series of selected data points from a PLC to the Databus. From there the data can be used within other Edge apps, e.g. the Flow Creator.
 
 ### General task
 
@@ -72,7 +59,7 @@ You can find further information about the following steps in the [Configuration
 
 - [Overview](/docs/Installation.md#overview)
 - [Install Modbus TCP Connector](/docs/Installation.md#install-modbus-tcp-connector)
-- [Configure Databus](/docs/Installation.md#configure-ie-databus)
+- [Configure Databus](/docs/Installation.md#configure-databus)
 - [Configure Modbus TCP via Common Configurator](/docs/Installation.md#configure-modbus-tcp-via-common-configurator)
 
 ## Usage
