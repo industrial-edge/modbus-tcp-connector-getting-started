@@ -3,15 +3,16 @@
 - [Configuration](#configuration)
   - [Overview](#overview)
   - [Install Modbus TCP Connector](#install-modbus-tcp-connector)
-  - [Configure IE Databus](#configure-ie-databus)
-  - [Configure Modbus TCP via Common configurator](#configure-modbus-tcp-via-iih-configurator)
+  - [Configure Databus](#configure-databus)
+  - [Configure Modbus TCP via Common Configurator](#configure-modbus-tcp-via-common-configurator)
 
 ## Overview
 
-When working with connectors on Industrial Edge, the **IE Databus** app is required to exchange the data via MQTT. The configuration of the connectors is done via the **Common Configurator** app. Therefore also the **Registry Service** app is necessary, to find installed connectors on an Industrial Edge Device.
+When working with connectors on Industrial Edge, the **Databus** app is required to exchange the data via MQTT. The configuration of the connectors is done via the **Common Configurator** app. Therefore also the **Registry Service** app is necessary, to find installed connectors on an Industrial Edge Device.
 
 Make sure the following apps are installed and running on the Industrial Edge Device (IED):
-- IE Databus
+
+- Databus
 - Common Configurator
 - IIH Registry Service
 
@@ -29,7 +30,7 @@ The Modbus TCP Connector app must be available in your IEM catalog. Proceed the 
 
 ![app](/docs/graphics/Modbus_App.png)
 
-## Configure IE Databus
+## Configure Databus
 
 The system app Databus is essential to exchange data between a PLC and the IED. The Modbus TCP Connector sends the transfered data to the Databus on the IED. From there the data can be used for further processing.
 
@@ -41,7 +42,7 @@ You need to create a user and one or more topics in the Databus configuration, w
 Therefore follow these steps:
 
 - open the Industrial Edge Management (IEM)
-- go to 'Data Connections' > IE Databus
+- go to 'Data Connections' > Databus
 - select the corresponding IED
 - create the topic `ie/#` and a dedicated user with username and password ('edge'/'edge'), set permissions to 'Publish and Subscribe'
 - deploy the configuration and wait for the job to be finished successfully
@@ -50,31 +51,29 @@ Therefore follow these steps:
 
 ## Configure Modbus TCP via Common Configurator
 
-With the Common Configurator, you can configure several connectors and publish the data to the IE Databus. Therefore, you must enter the Databus credentials within the Common Configurator:
+With the Common Configurator, you can configure several connectors and publish the data to the Databus. Therefore, you must enter the Databus credentials within the Common Configurator:
 
 - open the IED web interface
-- open the app Common configurator
+- open the app Common Configurator
 - go to the tab 'Settings' and select the menu 'Databus credentials'
 - enter the databus service name: 'ie-databus:1883'
 - in tab 'Data Publisher settings' enter the databus user name and password ('edge'/'edge')
 - in tab 'Data Subscriber settings' enter the databus user name and password ('edge'/'edge')
-- Save the settings
+- save the settings
 
 ![IIH_Settings](/docs/graphics/databuscred.PNG)
 
 As soon as the Modbus TCP Connector is installed and started on the same IED as the Common Configurator, the connector is visible within the configurator. In this example we want to configure a Modbus TCP connection to any Modbus TCP server.
 
+Good to know:
 
-
-"Zero based addressing" is disabled by default in V3
-"Change word order" is not an option anymore with V3
-"Use single write" is disabled by default in V3
-
-05H, 06H, 15H, and 16H are used for writing into the PLC. Otherwise only function codes 15H and 16H are used.
+- "Zero based addressing": PLC register addresses begin at zero and configurator indices begin at one by default (enable, if PLC register addresses and configurator indices begin at zero)
+- "Change word order": default counting method is 16 LSB - 1 MSB (enable, if bit counting method is 0 LSB - 15 MSB)
+- "Use single write": function codes 15H and 16H are used by default (enable, if function codes 05H, 06H, 15H and 16H are used)
 
 Please look up the operating manual of the app for detailed information.
 
-In Common configurator choose Get Data - Connector configurator 
+In Common Configurator choose Get Data - Connector configurator 
 
 ![configuration1](/docs/graphics/connectors.png)
 
@@ -85,7 +84,8 @@ To configure the Modbus TCP Connector, proceed as following:
 - switch to tab 'Tags'
 - choose 'Add data source'
 - configure the PLC accordingly and save
- ![configuration2](/docs/graphics/modbusset.png)
+
+![configuration2](/docs/graphics/modbusset.png)
  
 - under column 'Actions' of the newly created PLC, choose 'Add tag'
   
