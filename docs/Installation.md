@@ -65,15 +65,7 @@ With the Common Configurator, you can configure several connectors and publish t
 
 As soon as the Modbus TCP Connector is installed and started on the same IED as the Common Configurator, the connector is visible within the configurator. In this example we want to configure a Modbus TCP connection to any Modbus TCP server.
 
-Good to know:
-
-- "Zero based addressing": PLC register addresses begin at zero and configurator indices begin at one by default (enable, if PLC register addresses and configurator indices begin at zero)
-- "Change word order": default counting method is 16 LSB - 1 MSB (enable, if bit counting method is 0 LSB - 15 MSB)
-- "Use single write": function codes 15H and 16H are used by default (enable, if function codes 05H, 06H, 15H and 16H are used)
-
-Please look up the operating manual of the app for detailed information.
-
-In Common Configurator choose Get Data - Connector configurator 
+In Common Configurator choose Get Data - Connector Configurator:
 
 ![configuration1](/docs/graphics/connectors.png)
 
@@ -87,19 +79,27 @@ To configure the Modbus TCP Connector, proceed as following:
 
 ![configuration2](/docs/graphics/modbusset.png)
  
-- under column 'Actions' of the newly created PLC, choose 'Add tag'
+Good to know:
+
+- "Zero based addressing": PLC register addresses begin at zero and configurator indices begin at one by default (enable, if PLC register addresses and configurator indices begin at zero)
+- "Change word order": default counting method is 16 LSB - 1 MSB (enable, if bit counting method is 0 LSB - 15 MSB)
+- "Use single write": function codes 15H and 16H are used by default (enable, if function codes 05H, 06H, 15H and 16H are used)
+
+-> Please look up the operating manual of the app for detailed information.
+
+Under column 'Actions' of the newly created PLC, choose 'Add tag':
   
 ![configuration2](/docs/graphics/tagimport.png)
   
-- configure the tags accordingly and save
+Configure the tags accordingly and save:
 
 ![configuration2](/docs/graphics/Configuration2.png)
 
-- select the newly created PLC and click 'Deploy' to save the configuration and start the project
+Select the newly created PLC and click 'Deploy' to save the configuration and start the project:
 
 ![Deploy](/docs/graphics/deploy.png)
 
-- back on the overview page 'Databus connectors', the status of the Modbus TCP Connector should be shown as **connected**
+Back on the overview page 'Databus connectors', the status of the Modbus TCP Connector should be shown as **connected**:
 
 ![configuration1](/docs/graphics/connectors.png)
 
