@@ -4,7 +4,7 @@
   - [Read metadata](#read-metadata)
   - [Write data](#write-data)
   - [Read data](#read-data)
-  - [Use Data Service](#use-data-service)
+  - [Use IIH Essentials](#use-IIH-Essentials)
   
 Via the IE Flow Creator, we can write and read the Modbus TCP data.
 
@@ -24,10 +24,6 @@ To print out the Modbus TCP Connector metadata, follow these steps:
 
 ![metadata](/docs/graphics/Metadata.png)
 
-Now you can see the configured datapoints according to Modbus TCP Configurator settings:
-
-- ***var_int*** with unique id 102
-- ***var_dint*** with unique id 103
 
 ## Write data
 
@@ -59,22 +55,17 @@ To print out the transfered Modbus TCP Connector data, you must fetch the tag ID
 
 ![read_data_flow](/docs/graphics/Read_Data_Flow.png)
 
-If some data is written on tag ***var_int*** with ID 102, the output looks like the following:
+If some data is written in flow creator it looks like the following:
 
 ![read_1](/docs/graphics/Read_1.png)
 
-If some data is written on tag ***var_dint*** with ID 103, the output looks like the following:
-
-![read_2](/docs/graphics/Read_2.png)
-
-## Use Data Service
-
-The app Data Service collects the data out of different connectors and stores it for a defined time period. This is a prerequisite for other apps like Performance Insight.
+## Use IIH Essentials
+The app IIH Essentials collects the data out of different connectors and stores it for a defined time period. This is a prerequisite for other apps like Performance Insight.
 
 To activate the data transfer from the Modbus TCP Connector, proceed as following:
 
 - open the IED web interface
-- open the app Data Service
+- open the app IIH Essentials
 - go to tab 'Connectors' and select 'Modbus TCP Connector'
 - select the edit button and enter the user name and the password for the Databus user ('edge'/'edge')
 - activate the adapter and save
@@ -83,6 +74,11 @@ To activate the data transfer from the Modbus TCP Connector, proceed as followin
 
 - go to tab 'Assets & Connectivity' and add the variables, that were configured within the Modbus TCP Connector
 
-![DataServiceAdapter](/docs/graphics/DataService_Add.png)
+## Use Store Data in Common Configurator
+- (It´s necessary to have IIH Essentials installed)
+- open Define Data in Common Configurator
+- choose Modbus TCP Connector
+- Add asset, add tags to the asset and deploy
 
-- data is now collected by the Data Service and can be used by further apps
+![DataServiceAdapter](/docs/graphics/asset.png)
+

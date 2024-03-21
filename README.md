@@ -21,20 +21,7 @@ This example shows how to use the Industrial Edge app Modbus TCP Connector.
 
 This tutorial shows how to use the Industrial Edge application Modbus TCP Connector to establish a connection between an Industrial Edge Device (IED) and a PLC that supports Modbus TCP, a data communications protocol (client/server) that runs on Ethernet.
 
-These PLC variants are supported:
-
-- Schneider Quantum TCP/IP 140 CPU 113 03　
-- Schneider TSX Premium TSXP573634　
-- Schneider TSX Momentum 171CCC98020 (TCP/IP)　
-- Schneider Micro TSX 3710001　
-- Schneider M 340
-- Schneider TM218LDAE24DRHN
-- Schneider TM238LDD24DT
-- Schneider TM258LD42DT　
-- Siemens SIWAREX WP231　
-- Siemens SIWAREX WP241
-
-The Modbus TCP Connector is an application that runs on the individual IED. Connections can be configured using the IIH Configurator for Industrial Edge. The connector transfers the value series of selected data points from a PLC to the Databus. From there the data can be used within other Edge apps, e.g. the Flow Creator.
+The Modbus TCP Connector is an application that runs on the individual IED. It can communicate with any Modbus TCP PLC that uses the standard protocol. Connections can be configured using the Common Configurato for Industrial Edge. The connector transfers the value series of selected data points from a PLC to the Databus. From there the data can be used within other Edge apps, e.g. the Flow Creator.
 
 ### General task
 
@@ -48,22 +35,23 @@ Here we configure a connection between a Modbus server and client. The IED acts 
 
 - Access to an Industrial Edge Management (IEM) with onboarded Industrial Edge Device (IED)
 - IEM: Installed system configurator for Databus
-- IED: Installed apps IE Databus, IE Flow Creator, IIH Configurator, IIH Registry Service, Modbus TCP Connector, Data Service (optional)
+- IED: Installed apps IE Databus, IE Flow Creator, Common Configurator, IIH Registry Service, Modbus TCP Connector, IIH Essentials, Databus gateway
 - IED is connected to Modbus TCP Server
 - Google Chrome (Version ≥ 72)
 
 ### Used components
 
-- Industrial Edge Management (IEM) V1.5.1-4 / V1.8.6
-  - IE Databus Configurator V1.7.8
-- Industrial Edge Device (OS) V1.8.0-6
-  - IE Databus V1.7.1
-  - IE Flow Creator V1.10.0-3
-  - IIH Configurator V1.5.0
-  - IIH Registry Service V1.5.0
-  - Modbus TCP Connector V2.0.0-6
-  - Data Service V1.5.0
-- Modbus TCP Server
+- Industrial Edge Management (IEM) V1.5.1-4 / V2.0.1-1
+  - Databus Configurator V2.3.2-2
+  - Industrial Edge Virtual Device (OS) ievd-1.16.1-1-a
+  - Databus V2.3.2-5
+  - Flow Creator V1.16.0-2
+  - Common Configurator V1.14.0
+  - IIH Registry Service V1.9.0.0
+  - Modbus TCP Connector V3.0.1
+  - IIH Essentials V1.9.0
+  - Databus Gateway V1.9.0
+- Modbus TCP Server - ModRSsim2 Modbus TCP Server Simulator
 
 ## Configuration
 
@@ -71,8 +59,8 @@ You can find further information about the following steps in the [Configuration
 
 - [Overview](/docs/Installation.md#overview)
 - [Install Modbus TCP Connector](/docs/Installation.md#install-modbus-tcp-connector)
-- [Configure IE Databus](/docs/Installation.md#configure-ie-databus)
-- [Configure Modbus TCP via IIH Configurator](/docs/Installation.md#configure-modbus-tcp-via-iih-configurator)
+- [Configure Databus](/docs/Installation.md#configure-databus)
+- [Configure Modbus TCP via Common Configurator](/docs/Installation.md#configure-modbus-tcp-via-common-configurator)
 
 ## Usage
 
@@ -83,8 +71,8 @@ You can find further information about how to handle the data via the IE Flow Cr
 * [Read metadata](/docs/Usage.md#read-metadata)
 * [Write data](/docs/Usage.md#write-data)
 * [Read data](/docs/Usage.md#read-data)
-* [Use Data Service](/docs/Usage.md#use-data-service)
-
+* [Use IIH Essentials](/docs/Usage.md#use-IIH-Essentials)
+* [Use Common Configurator](/docs/Usage.md#Use-Store-Data-in-Common-Configurator)
 ## Documentation
 
 You can find further documentation and help in the following links
