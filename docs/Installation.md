@@ -93,7 +93,7 @@ Under column 'Actions' of the newly created PLC, choose 'Add tag':
   
 Configure the tags accordingly and save:
 
-![configuration2](/docs/graphics/Configuration2.png)
+![configuration2](/docs/graphics/Configuration3.png)
 
 Select the newly created PLC and click 'Deploy' to save the configuration and start the project:
 
