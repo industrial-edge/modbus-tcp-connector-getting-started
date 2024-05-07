@@ -27,7 +27,7 @@ The Modbus TCP Connector is an application that runs on the individual IED. It c
 
 Here we configure a connection between a Modbus server and client. The IED acts as the Modbus client and the Modbus server can be any hardware that is able to instantiate standard Modbus communication. The data is published on the IE Databus. By using the application IE Flow Creator, we fetch the metadata of the Modbus TCP Connector, write some data on the configured tags and read out data.
 
-![Overview](docs/graphics/Overview.png)
+<img src="docs/graphics/Overview.png" width=600 />
 
 ## Requirements
 
@@ -35,22 +35,23 @@ Here we configure a connection between a Modbus server and client. The IED acts 
 
 - Access to an Industrial Edge Management (IEM) with onboarded Industrial Edge Device (IED)
 - IEM: Installed system configurator for Databus
-- IED: Installed apps IE Databus, IE Flow Creator, Common Configurator, IIH Registry Service, Modbus TCP Connector, IIH Essentials, Databus gateway
+- IED: Installed apps Modbus TCP Connector, Databus, Databus Gateway, Flow Creator, Common Configurator, IIH Registry Service, Common Import Converter, IIH Essentials (optional)
 - IED is connected to Modbus TCP Server
 - Google Chrome (Version ≥ 72)
 
 ### Used components
 
-- Industrial Edge Management (IEM) V1.5.1-4 / V2.0.1-1
+- Industrial Edge Management (IEM Pro) V1.7.6
   - Databus Configurator V2.3.2-2
-  - Industrial Edge Virtual Device (OS) ievd-1.16.1-1-a
-  - Databus V2.3.2-5
-  - Flow Creator V1.16.0-2
-  - Common Configurator V1.14.0
-  - IIH Registry Service V1.9.0.0
-  - Modbus TCP Connector V3.0.1
-  - IIH Essentials V1.9.0
-  - Databus Gateway V1.9.0
+- Industrial Edge Virtual Device (OS) ievd-1.16.1-1-a
+  - Modbus TCP Connector V3.0.0-1
+  - Databus V2.3.3-2
+  - Databus Gateway V1.10.0-0
+  - Flow Creator V1.17.0-2
+  - Common Configurator V1.10.0-4
+  - IIH Registry Service V1.10.0-0
+  - Common Import Converter V2.2.0-0
+  - IIH Essentials V1.10.3  
 - Modbus TCP Server - ModRSsim2 Modbus TCP Server Simulator
 
 ## Configuration

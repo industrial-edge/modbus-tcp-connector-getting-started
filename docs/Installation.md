@@ -8,13 +8,15 @@
 
 ## Overview
 
-When working with connectors on Industrial Edge, the **Databus** app is required to exchange the data via MQTT. The configuration of the connectors is done via the **Common Configurator** app. Therefore also the **Registry Service** app is necessary, to find installed connectors on an Industrial Edge Device.
+When working with connectors on Industrial Edge, the **Databus** app is required to exchange the data via MQTT. The configuration of the connectors is done via the **Common Configurator** app. Besides this, also the apps **IIH Registry Service** and **Common Import Converter** are necessary.
 
 Make sure the following apps are installed and running on the Industrial Edge Device (IED):
 
 - Databus
+- Databus Gateway
 - Common Configurator
 - IIH Registry Service
+- Common Import Converter
 
 ## Install Modbus TCP Connector
 
