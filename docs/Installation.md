@@ -30,11 +30,11 @@ The Modbus TCP Connector app must be available in your IEM catalog. Proceed the 
 - click 'Install Now'
 - click 'Install' to allow the installation
 
-![app](/docs/graphics/Modbus_App.png)
+![Modbus_App](/docs/graphics/Modbus_App.png)
 
 ## Configure Databus
 
-The system app Databus is essential to exchange data between a PLC and the IED. The Modbus TCP Connector sends the transfered data to the Databus on the IED. From there the data can be used for further processing.
+The system app Databus (MQTT broker) is essential to exchange data between a PLC and the IED. The Modbus TCP Connector sends the transfered data to the Databus on the IED. From there the data can be used for further processing.
 
 You need to create a user and one or more topics in the Databus configuration, which cover the Modbus TCP data:
 
@@ -49,7 +49,7 @@ Therefore follow these steps:
 - create the topic `ie/#` and a dedicated user with username and password ('edge'/'edge'), set permissions to 'Publish and Subscribe'
 - deploy the configuration and wait for the job to be finished successfully
 
-![databus](/docs/graphics/databus.png)
+![Databus](/docs/graphics/Databus.png)
 
 ## Configure Modbus TCP via Common Configurator
 
@@ -63,15 +63,9 @@ With the Common Configurator, you can configure several connectors and publish t
 - in tab 'Data Subscriber settings' enter the databus user name and password ('edge'/'edge')
 - save the settings
 
-![IIH_Settings](/docs/graphics/databuscred.PNG)
+![IIHDatabusSettings](/docs/graphics/IIHDatabusSettings.png)
 
-As soon as the Modbus TCP Connector is installed and started on the same IED as the Common Configurator, the connector is visible within the configurator. In this example we want to configure a Modbus TCP connection to any Modbus TCP server.
-
-In Common Configurator choose Get Data - Connector Configurator:
-
-![configuration1](/docs/graphics/connectors.png)
-
-To configure the Modbus TCP Connector, proceed as following:
+As soon as the Modbus TCP Connector is installed and started on the same IED as the Common Configurator, the connector is visible within the configurator. In this example we want to configure a Modbus TCP connection to any Modbus TCP server:
 
 - go to the tab 'Get data'
 - select the Modbus TCP Connector
@@ -79,7 +73,7 @@ To configure the Modbus TCP Connector, proceed as following:
 - choose 'Add data source'
 - configure the PLC accordingly and save
 
-![configuration2](/docs/graphics/modbusset.png)
+![DataSource](/docs/graphics/DataSource.png)
  
 Good to know:
 
@@ -91,18 +85,22 @@ Good to know:
 
 Under column 'Actions' of the newly created PLC, choose 'Add tag':
   
-![configuration2](/docs/graphics/tagimport.png)
+![CreateTag](/docs/graphics/CreateTag.png)
   
 Configure the tags accordingly and save:
 
-![configuration2](/docs/graphics/Configuration3.png)
+![AllTags](/docs/graphics/AllTags.png)
 
-Select the newly created PLC and click 'Deploy' to save the configuration and start the project:
+For writing the tag values onto the MQTT databus you need to activate and confirm the 'Publish on the databus' option for each tag.
 
-![Deploy](/docs/graphics/deploy.png)
+![IIH_ActivateDatabus](IIH_ActivateDatabus.png)
+
+Select the newly created PLC including all the tags and click 'Deploy' to save the configuration and start the project:
+
+![Deploy](/docs/graphics/Deploy.png)
 
 Back on the overview page 'Databus connectors', the status of the Modbus TCP Connector should be shown as **connected**:
 
-![configuration1](/docs/graphics/connectors.png)
+![IIH_Connected](/docs/graphics/IIH_Connected.png)
 
 Now data can be transferred via the Modbus TCP connection. Please find more information in the [Usage](/docs/Usage.md) documentation.
