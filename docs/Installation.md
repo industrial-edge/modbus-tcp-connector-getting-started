@@ -87,13 +87,13 @@ Under column 'Actions' of the newly created PLC, choose 'Add tag':
   
 ![CreateTag](/docs/graphics/CreateTag.png)
   
-Configure the tags accordingly and save:
+Configure the tags accordingly:
 
 ![AllTags](/docs/graphics/AllTags.png)
 
 For writing the tag values onto the MQTT databus you need to activate and confirm the 'Publish on the databus' option for each tag.
 
-![IIH_ActivateDatabus](IIH_ActivateDatabus.png)
+![IIH_ActivateDatabus](/docs/graphics/IIH_ActivateDatabus.png)
 
 Select the newly created PLC including all the tags and click 'Deploy' to save the configuration and start the project:
 

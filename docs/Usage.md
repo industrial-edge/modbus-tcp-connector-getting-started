@@ -6,9 +6,9 @@
   - [Read data](#read-data)
   - [Use IIH Essentials](#use-IIH-Essentials)
   
-Via the IE Flow Creator, we can write and read the Modbus TCP data.
+We can use the Flow Creator to write and read the Modbus TCP data.
 
-The used flow can be downloaded [here](/src/flow.json) and imported into the IE Flow Creator, that is running on the same IED as the Modbus TCP Connector.
+The used flow can be downloaded [here](/src/flow.json) and imported into the Flow Creator, that is running on the same IED as the Modbus TCP Connector.
 
 ## Read metadata
 
@@ -29,13 +29,13 @@ To print out the Modbus TCP Connector metadata, follow these steps:
 
 To write some data on the Modbus TCP tags, you must fetch the tag ID from metadata payload based on the tag name. Please follow these steps:
 
-- for the ***var_int*** tag, create an inject node to write the value -32768 with this JSON payload: `{"vals":[{"id":"102","val":"-32768"}]}`
-- for the ***var_int*** tag, create another inject node to write the value 32767 with this JSON payload: `{"vals":[{"id":"102","val":"32767"}]}`
-- for the ***var_dint*** tag, create an inject node to write the value -2147483648 with this JSON payload: `{"vals":[{"id":"103","val":"-2147483648"}]}`
-- for the ***var_dint*** tag, create another inject node to write the value 2147483647 with this JSON payload: `{"vals":[{"id":"103","val":"2147483647"}]}`
+- for the ***var_int*** tag, create an inject node to write the value -32768 with this JSON payload: `{"vals":[{"id":"1","val":"-32768"}]}`
+- for the ***var_int*** tag, create another inject node to write the value 32767 with this JSON payload: `{"vals":[{"id":"1","val":"32767"}]}`
+- for the ***var_dint*** tag, create an inject node to write the value -2147483648 with this JSON payload: `{"vals":[{"id":"3","val":"-2147483648"}]}`
+- for the ***var_dint*** tag, create another inject node to write the value 2147483647 with this JSON payload: `{"vals":[{"id":"3","val":"2147483647"}]}`
 - create a mqtt out node
 - set the server to 'ie-databus' with port 1883 and corresponding user name/password ('edge'/'edge')
-- set the topic to `ie/d/j/simatic/v1/mbtcp1/dp/w/Modbus Server`
+- set the topic to `ie/d/j/simatic/v1/mbtcp1/dp/w/ModbusServer`
 - connect the inject nodes to the mqtt out node
 - deploy the flow
 - click the single inject buttons, to write the values
@@ -55,11 +55,12 @@ To print out the transfered Modbus TCP Connector data, you must fetch the tag ID
 
 ![read_data_flow](/docs/graphics/Read_Data_Flow.png)
 
-If some data is written in flow creator it looks like the following:
+If some data is written in Flow Creator it looks like the following:
 
-![read_1](/docs/graphics/Read_1.png)
+![read_1](/docs/graphics/Read_2.png)
 
 ## Use IIH Essentials
+
 The app IIH Essentials collects the data out of different connectors and stores it for a defined time period. This is a prerequisite for other apps like Performance Insight.
 
 To activate the data transfer from the Modbus TCP Connector, proceed as following:
@@ -70,15 +71,8 @@ To activate the data transfer from the Modbus TCP Connector, proceed as followin
 - select the edit button and enter the user name and the password for the Databus user ('edge'/'edge')
 - activate the adapter and save
 
-![DataServiceAdapter](/docs/graphics/DataService_Adapter.png)
+![DataServiceAdapter](/docs/graphics/IIHEssentials_Adapter.png)
 
-- go to tab 'Assets & Connectivity' and add the variables, that were configured within the Modbus TCP Connector
+- go to tab 'Assets & Connectivity' and add the variables that were configured within the Modbus TCP Connector
 
-## Use Store Data in Common Configurator
-- (It´s necessary to have IIH Essentials installed)
-- open Define Data in Common Configurator
-- choose Modbus TCP Connector
-- Add asset, add tags to the asset and deploy
-
-![DataServiceAdapter](/docs/graphics/asset.png)
-
+![IIHEssentials_Tags](/docs/graphics/IIHEssentials_Tags.png)
