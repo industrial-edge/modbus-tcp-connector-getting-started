@@ -95,9 +95,7 @@ For writing the tag values onto the MQTT databus you need to activate and confir
 
 ![IIH_ActivateDatabus](/docs/graphics/IIH_ActivateDatabus.png)
 
-Select the newly created PLC including all the tags and click 'Deploy' to save the configuration and start the project:
-
-![Deploy](/docs/graphics/Deploy.png)
+Select the newly created PLC including all the tags and click 'Deploy' to save the configuration and start the project.
 
 Back on the overview page 'Databus connectors', the status of the Modbus TCP Connector should be shown as **connected**:
 

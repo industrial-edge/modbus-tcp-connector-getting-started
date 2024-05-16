@@ -44,7 +44,7 @@ Here we configure a connection between a Modbus server and client. The IED acts 
 - Industrial Edge Management (IEM Pro) V1.7.6
   - Databus Configurator V2.3.2-2
 - Industrial Edge Virtual Device (OS) ievd-1.16.1-1-a
-  - Modbus TCP Connector V3.0.0-1
+  - Modbus TCP Connector V 3.0.1-0
   - Databus V2.3.3-2
   - Databus Gateway V1.10.0-0
   - Flow Creator V1.17.0-2
